@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ahorcadito-ONE</title>
+  </head>
+  <body>
+    <div id="menu">
+      <input type="button" value="Nuevo Juego" id="newJuego" />
+      <input type="button" value="Agregar Palabra" id="nuevaPalabra" />
+      <input
+        type="text"
+        placeholder="Ingrese su palabra"
+        id="inputNuevaPalabra"
+      />
+      <input type="button" value="Confirmar" id="btnAgregar" />
+    </div>
+
+    <div id="contenedorAhorcado">
+      <canvas id="graficoAhorcado" width="400" height="600"></canvas>
+      <div>
+        <h1 id="palabraSecreta"></h1>
+        <h1 id="entradasIncorrectas"></h1>
+      </div>
+    </div>
+
+    <script src="canva.js"></script>
+    <script src="validador.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
